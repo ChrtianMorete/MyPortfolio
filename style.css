@@ -6,6 +6,21 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
+/*@keyframes moving-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+ body {
+    background: linear-gradient(to right, #ff0000, #00ff00, blue, black);
+    background-size: 400% 400%;
+    animation: moving-gradient 8s ease-in-out infinite;
+}*/
+
+
+
+
 .wrapper{
   height: 100%;
   width: 300px;
@@ -13,7 +28,7 @@
 }
 
 .wrapper .menu-btn{
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 10px;
   background: #4a4a4a;
@@ -173,14 +188,15 @@
   font-weight: 700;
 }
 
-@keyframes running-color {
-  0% { background-color: #ff000070; }
-  25% { background-color: rgba(0, 0, 255, 0.267); }
-  50% { background-color: rgba(0, 128, 0, 0.384); }
-  75% { background-color: rgba(255, 255, 0, 0.274); }
-  100% { background-color: rgba(255, 0, 200, 0.24); }
+@keyframes moving-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.list-items, .title{
-  /* existing styles */
-  animation: running-color 5s infinite;
+
+#sidebar .list-items, #sidebar .title, body{
+  position: relative;
+  background: linear-gradient(to right, #ff0000, #00ff00, blue, black);
+  background-size: 400% 400%;
+  animation: moving-gradient 12s ease-in-out infinite;
 }
