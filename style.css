@@ -172,3 +172,15 @@
   font-size: 40px;
   font-weight: 700;
 }
+
+@keyframes running-color {
+  0% { background-color: #ff000070; }
+  25% { background-color: rgba(0, 0, 255, 0.267); }
+  50% { background-color: rgba(0, 128, 0, 0.384); }
+  75% { background-color: rgba(255, 255, 0, 0.274); }
+  100% { background-color: rgba(255, 0, 200, 0.24); }
+}
+.list-items, .title{
+  /* existing styles */
+  animation: running-color 5s infinite;
+}
